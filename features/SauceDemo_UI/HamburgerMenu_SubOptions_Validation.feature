@@ -9,8 +9,15 @@ Feature: Sauce Demo : Verify HamburgerMenu Sub Options
     @SauceDemo-UI-Test
     Scenario: Verify HamburgerMenu Sub Options
         When I click on the Hamburger Menu
-            | Menu      | Action |
-            | Open Menu | Click  |
+            | Menu             | Action |
+            | Open Menu        | Click  |
+            | Cross Hamburger  | Click  |
+            | Temp Add To Cart | Click  |
+            | Cart             | Click  |
+
+# When I click on the Hamburger Menu
+#     | Menu      | Action |
+#     | About     | Click  |
 # Then I should see the following sub options in Hamburger Menu:
 #     | optionName          |
 #     | All Items           |
