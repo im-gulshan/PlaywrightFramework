@@ -25,6 +25,9 @@ import path from "path";
 import { sauceDemoConfig } from "../../ApplicationConfigs/sauceDemoConfig";
 import { glob } from "fs";
 
+import { setDefaultTimeout } from "@cucumber/cucumber";
+setDefaultTimeout(60 * 1000);
+
 let commonMethods = new CommonMethods();
 let logInPage: LogInPage;
 
@@ -73,14 +76,15 @@ BeforeAll(async () => {
     console.log("process.env.executeSauceDemoUITests: " + process.env.executeSauceDemoUITests);
 
     global.errorMessages = [];
+
     if (
         process.env.project === "sauceDemoProject" ||
-        process.env.executeSauceDemoUITests === "true"||
+        process.env.executeSauceDemoUITests === "true" ||
         envConfig.executeSauceDemoUITests === "true"
     ) {
         global.project = "sauceDemoProject";
         console.log("global.project - sauceDemo : " + global.project);
-    } // add elseIf here similarly like above one conditon if you add another future project 
+    }
 
     try {
         console.log("global.project : " + global.project);
@@ -91,48 +95,31 @@ BeforeAll(async () => {
         commonMethods.writeToLogFile(`global.project is : ${e}`);
     }
 
-    // global.testDataFilePath = await commonMethods.returnConfigValue(
-    //     global.project,
-    //     "UI_TESTDATA_FILE_PATH"
-    // );
-
-    // global.testCaseFilePath = await commonMethods.returnConfigValue(
-    //     global.project,
-    //     "UI_TESTCASE_FILE_PATH"
-    // );
-
-    // add other file paths if required in future
-
-    if(
+    if (
         process.env.executeSauceDemoUITests === "true" ||
         envConfig.executeSauceDemoUITests === "true"
-    ){
+    ) {
         commonMethods.writeToLogFile(`Launching browser....`);
         global.browser = await chromium.launch({
             args: ["--start-maximized"],
             headless: false,
             timeout: 120000,
         });
-    }
 
-    try {
-        global.context = await global.browser.newContext({
-            acceptDownloads: true,
-        });
+        try {
+            global.context = await global.browser.newContext({
+                acceptDownloads: true,
+            });
 
-        global.page = await global.context.newPage();
-        await global.page.setViewportSize({ width: 1350, height: 750 });
-        global.page.setDefaultNavigationTimeout(120000);
-        logInPage = new LogInPage(global.page);
-    } catch (e) {
-        await commonMethods.writeToLogFile(
-            `Error in creating new instance of context and page....`
-        );
-        await commonMethods.writeToLogFile(`Error : ${e}`);
-        throw e;
-    }
-
-    if (global.project === "sauceDemoProject") {
+            global.page = await global.context.newPage();
+            await global.page.setViewportSize({ width: 1350, height: 750 });
+            global.page.setDefaultNavigationTimeout(120000);
+            logInPage = new LogInPage(global.page);
+        } catch (e) {
+            await commonMethods.writeToLogFile(`Error in creating context and page`);
+            await commonMethods.writeToLogFile(`Error: ${e}`);
+            throw e;
+        }
 
         await logInPage.logIn(
             sauceDemoConfig.sauceDemoTestEnvURL,
@@ -140,7 +127,8 @@ BeforeAll(async () => {
             sauceDemoConfig.sauceDemoTestEnvPassword
         );
     }
-}); // BeforeAll
+});
+
 
 Before(async function (sourceLocation) {
     initializeStore({ globalFlag: false });
@@ -249,7 +237,7 @@ AfterAll(async () => {
                     .padStart(2, "0")}`;
 
         commonMethods.writeToLogFile(
-            "Execution En Date Time : " + formatterdDateTime
+            "Execution End Date Time : " + formatterdDateTime
         );
 
     }

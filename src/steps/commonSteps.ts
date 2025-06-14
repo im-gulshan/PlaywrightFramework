@@ -56,4 +56,4 @@ When("I click on the Hamburger Menu", async (dataTable) => {
 
     }
 
-})
+});

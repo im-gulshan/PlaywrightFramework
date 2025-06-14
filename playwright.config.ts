@@ -1,6 +1,5 @@
 import { PlaywrightTestConfig } from '@playwright/test';
 import { devices } from '@playwright/test';
-import { channel } from 'diagnostics_channel';
 
 /**
  * Configuration file for Playwright Test Runner

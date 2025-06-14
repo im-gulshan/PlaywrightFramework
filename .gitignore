@@ -5,3 +5,9 @@ node_modules/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+
+
+#Playwright Reports
+screenshots/*
+playwright_log.txt
+tcPickStatus.json

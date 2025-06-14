@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 4394499
+              "duration": 4371699
             }
           },
           {
@@ -27,11 +27,11 @@
             },
             "result": {
               "status": "passed",
-              "duration": 287211199
+              "duration": 254977298
             },
             "embeddings": [
               {
-                "data": "U2NyZWVuc2hvdCB0YWtlbiA6IEQ6XFBsYXl3cmlnaHRGcmFtZXdvcmtcc2NyZWVuc2hvdHNcZjRhY2JmNGItMzA4Yi00NTkyLWI2YzUtZWVhNTU2ODMzMDllLTE3NDk5MDc5MjE2NTIucG5n",
+                "data": "U2NyZWVuc2hvdCB0YWtlbiA6IEQ6XFBsYXl3cmlnaHRGcmFtZXdvcmtcc2NyZWVuc2hvdHNcYjA2ZjM1YjUtYjk5NC00YzM2LWEzNjgtMDAyYTI0MzU4ZDIxLTE3NDk5MjE4MzUzMDMucG5n",
                 "mime_type": "text/plain"
               }
             ]
@@ -46,11 +46,11 @@
             },
             "result": {
               "status": "passed",
-              "duration": 953604700
+              "duration": 1017785499
             },
             "embeddings": [
               {
-                "data": "U2NyZWVuc2hvdCB0YWtlbiA6IEQ6XFBsYXl3cmlnaHRGcmFtZXdvcmtcc2NyZWVuc2hvdHNcZjRhY2JmNGItMzA4Yi00NTkyLWI2YzUtZWVhNTU2ODMzMDllLTE3NDk5MDc5MjI3MzMucG5n",
+                "data": "U2NyZWVuc2hvdCB0YWtlbiA6IEQ6XFBsYXl3cmlnaHRGcmFtZXdvcmtcc2NyZWVuc2hvdHNcYjA2ZjM1YjUtYjk5NC00YzM2LWEzNjgtMDAyYTI0MzU4ZDIxLTE3NDk5MjE4MzYzODEucG5n",
                 "mime_type": "text/plain"
               }
             ]
@@ -70,6 +70,24 @@
                       "Open Menu",
                       "Click"
                     ]
+                  },
+                  {
+                    "cells": [
+                      "Cross Hamburger",
+                      "Click"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Temp Add To Cart",
+                      "Click"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Cart",
+                      "Click"
+                    ]
                   }
                 ]
               }
@@ -82,11 +100,11 @@
             },
             "result": {
               "status": "passed",
-              "duration": 222175798
+              "duration": 1705914999
             },
             "embeddings": [
               {
-                "data": "U2NyZWVuc2hvdCB0YWtlbiA6IEQ6XFBsYXl3cmlnaHRGcmFtZXdvcmtcc2NyZWVuc2hvdHNcZjRhY2JmNGItMzA4Yi00NTkyLWI2YzUtZWVhNTU2ODMzMDllLTE3NDk5MDc5MjI5NjEucG5n",
+                "data": "U2NyZWVuc2hvdCB0YWtlbiA6IEQ6XFBsYXl3cmlnaHRGcmFtZXdvcmtcc2NyZWVuc2hvdHNcYjA2ZjM1YjUtYjk5NC00YzM2LWEzNjgtMDAyYTI0MzU4ZDIxLTE3NDk5MjE4MzgxMDcucG5n",
                 "mime_type": "text/plain"
               }
             ]
@@ -96,7 +114,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 528900
+              "duration": 1352300
             }
           }
         ],
