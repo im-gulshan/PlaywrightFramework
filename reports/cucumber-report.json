@@ -1,0 +1,119 @@
+[
+  {
+    "description": "    As a user i want to Verify if all the option are present in HamburgerMenu",
+    "elements": [
+      {
+        "description": "",
+        "id": "sauce-demo-:-verify-hamburgermenu-sub-options;verify-hamburgermenu-sub-options",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Verify HamburgerMenu Sub Options",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4394499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I reset the Error and Warning Messages",
+            "match": {
+              "location": "src\\steps\\commonSteps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 287211199
+            },
+            "embeddings": [
+              {
+                "data": "U2NyZWVuc2hvdCB0YWtlbiA6IEQ6XFBsYXl3cmlnaHRGcmFtZXdvcmtcc2NyZWVuc2hvdHNcZjRhY2JmNGItMzA4Yi00NTkyLWI2YzUtZWVhNTU2ODMzMDllLTE3NDk5MDc5MjE2NTIucG5n",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I reload the page",
+            "match": {
+              "location": "src\\steps\\commonSteps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 953604700
+            },
+            "embeddings": [
+              {
+                "data": "U2NyZWVuc2hvdCB0YWtlbiA6IEQ6XFBsYXl3cmlnaHRGcmFtZXdvcmtcc2NyZWVuc2hvdHNcZjRhY2JmNGItMzA4Yi00NTkyLWI2YzUtZWVhNTU2ODMzMDllLTE3NDk5MDc5MjI3MzMucG5n",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Menu",
+                      "Action"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Open Menu",
+                      "Click"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I click on the Hamburger Menu",
+            "match": {
+              "location": "src\\steps\\commonSteps.ts:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 222175798
+            },
+            "embeddings": [
+              {
+                "data": "U2NyZWVuc2hvdCB0YWtlbiA6IEQ6XFBsYXl3cmlnaHRGcmFtZXdvcmtcc2NyZWVuc2hvdHNcZjRhY2JmNGItMzA4Yi00NTkyLWI2YzUtZWVhNTU2ODMzMDllLTE3NDk5MDc5MjI5NjEucG5n",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 528900
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SauceDemo-UI-Test",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "sauce-demo-:-verify-hamburgermenu-sub-options",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Sauce Demo : Verify HamburgerMenu Sub Options",
+    "tags": [],
+    "uri": "features\\SauceDemo_UI\\HamburgerMenu_SubOptions_Validation.feature"
+  }
+]

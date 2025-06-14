@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug Cucumber Tests",
+            "program": "./node_modules/@cucumber/cucumber/bin/cucumber-js",
+            "args": [
+                "--reauire-module",
+                "ts-node/register",
+                "--require",
+                "src/setup/hooks.ts",
+                "--require",
+                "src/steps/**/*.ts",
+            ],
+            "sourceMaps": true,
+            "outFiles": ["./dist/**/*.js"],
+        }
+    ]
+}

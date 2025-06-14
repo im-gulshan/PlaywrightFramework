@@ -1,0 +1,31 @@
+{
+    // ts-node specific configurations
+    "ts-node": {
+        // Skip type checking for faster execution
+        "transpileOnly": true
+    },
+    
+    // TypeScript compiler options
+    "compilerOptions": {
+        // Specify ECMAScript target version
+        "target": "es2016",
+        
+        // Use CommonJS module system (compatible with Node.js)
+        "module": "commonjs",
+        
+        // Enable importing JSON files as modules
+        "resolveJsonModule": true,
+        
+        // Allow default imports from modules with no default export
+        "esModuleInterop": true,
+        
+        // Ensure consistent casing in file names (important for Windows)
+        "forceConsistentCasingInFileNames": true,
+        
+        // Enable all strict type checking options
+        "strict": true,
+        
+        // Skip type checking of declaration files for better performance
+        "skipLibCheck": true
+    }
+}
