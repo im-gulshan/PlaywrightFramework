@@ -42,6 +42,34 @@ export class CommonPageMethods {
         }
     }
 
+    public async verifyText(expectedText: string, locator:string) {
+        await webActions.waitForAllNetworkCalls();
+        let pageLocator = await commonMethods.returnLocatorValue(
+            global.project,
+            locator
+        );
+
+        const elements = webActions.page.locator(pageLocator);
+        const count = await elements.count();
+        await commonMethods.writeToLogFile(`Total number of SubOptions present in Hamburger Menu: ${count}`);
+        
+        const actualText: string[] = [];
+        for (let i = 0; i < count; i++) {
+            const elementText = await elements.nth(i).textContent();
+            actualText.push(elementText ? elementText.trim() : '');
+        }
+
+        await commonMethods.writeToLogFile(`Actual Hamburger menu SubOptions: ${actualText.join(', ')}`);
+
+        const expectedTexts = expectedText.split(',').map(item => item.trim());
+        for(const expected of expectedTexts){
+            expect(actualText).toContain(expected);
+            await commonMethods.writeToLogFile(`✅ Verified: "${expected}" is present in the Hamburger menu.`);
+        }
+        await commonMethods.writeToLogFile(`Expected Hamburger menu SubOptions: ${expectedText}`);
+
+        expect(actualText.length).toBe(expectedTexts.length);
+    }
 
 
 
