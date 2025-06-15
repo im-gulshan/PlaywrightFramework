@@ -1,37 +1,37 @@
 [
   {
-    "description": "    As a user i want to Verify if all the option are present in HamburgerMenu",
+    "description": "    Test Case Number : TC_001\n    As a user i want to Verify if all the subOptions of HamburgerMenu",
     "elements": [
       {
         "description": "",
-        "id": "sauce-demo-:-verify-hamburgermenu-sub-options;verify-hamburgermenu-sub-options",
+        "id": "sauce-demo-:-verify-hamburgermenu-sub-options;verify-all-the-suboptions-of-hamburger-menu",
         "keyword": "Scenario",
-        "line": 10,
-        "name": "Verify HamburgerMenu Sub Options",
+        "line": 11,
+        "name": "Verify all the subOptions of Hamburger Menu",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 4371699
+              "duration": 4181399
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
+            "line": 7,
             "name": "I reset the Error and Warning Messages",
             "match": {
               "location": "src\\steps\\commonSteps.ts:18"
             },
             "result": {
               "status": "passed",
-              "duration": 254977298
+              "duration": 217412200
             },
             "embeddings": [
               {
-                "data": "U2NyZWVuc2hvdCB0YWtlbiA6IEQ6XFBsYXl3cmlnaHRGcmFtZXdvcmtcc2NyZWVuc2hvdHNcYjA2ZjM1YjUtYjk5NC00YzM2LWEzNjgtMDAyYTI0MzU4ZDIxLTE3NDk5MjE4MzUzMDMucG5n",
+                "data": "U2NyZWVuc2hvdCB0YWtlbiA6IEQ6XFBsYXl3cmlnaHRGcmFtZXdvcmtcc2NyZWVuc2hvdHNcN2NjYmM0NDYtYzAxOC00ZmM4LTg3YWQtNjgwNjc3ZGJkMmQyLTE3NDk5NzAzMzY0OTgucG5n",
                 "mime_type": "text/plain"
               }
             ]
@@ -39,18 +39,18 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 7,
+            "line": 8,
             "name": "I reload the page",
             "match": {
               "location": "src\\steps\\commonSteps.ts:32"
             },
             "result": {
               "status": "passed",
-              "duration": 1017785499
+              "duration": 880145199
             },
             "embeddings": [
               {
-                "data": "U2NyZWVuc2hvdCB0YWtlbiA6IEQ6XFBsYXl3cmlnaHRGcmFtZXdvcmtcc2NyZWVuc2hvdHNcYjA2ZjM1YjUtYjk5NC00YzM2LWEzNjgtMDAyYTI0MzU4ZDIxLTE3NDk5MjE4MzYzODEucG5n",
+                "data": "U2NyZWVuc2hvdCB0YWtlbiA6IEQ6XFBsYXl3cmlnaHRGcmFtZXdvcmtcc2NyZWVuc2hvdHNcN2NjYmM0NDYtYzAxOC00ZmM4LTg3YWQtNjgwNjc3ZGJkMmQyLTE3NDk5NzAzMzc0MjUucG5n",
                 "mime_type": "text/plain"
               }
             ]
@@ -67,25 +67,7 @@
                   },
                   {
                     "cells": [
-                      "Open Menu",
-                      "Click"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Cross Hamburger",
-                      "Click"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Temp Add To Cart",
-                      "Click"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Cart",
+                      "Hamburger Menu",
                       "Click"
                     ]
                   }
@@ -93,18 +75,37 @@
               }
             ],
             "keyword": "When ",
-            "line": 11,
-            "name": "I click on the Hamburger Menu",
+            "line": 12,
+            "name": "I navigate to the \"followings\".",
             "match": {
               "location": "src\\steps\\commonSteps.ts:42"
             },
             "result": {
               "status": "passed",
-              "duration": 1705914999
+              "duration": 247664899
             },
             "embeddings": [
               {
-                "data": "U2NyZWVuc2hvdCB0YWtlbiA6IEQ6XFBsYXl3cmlnaHRGcmFtZXdvcmtcc2NyZWVuc2hvdHNcYjA2ZjM1YjUtYjk5NC00YzM2LWEzNjgtMDAyYTI0MzU4ZDIxLTE3NDk5MjE4MzgxMDcucG5n",
+                "data": "U2NyZWVuc2hvdCB0YWtlbiA6IEQ6XFBsYXl3cmlnaHRGcmFtZXdvcmtcc2NyZWVuc2hvdHNcN2NjYmM0NDYtYzAxOC00ZmM4LTg3YWQtNjgwNjc3ZGJkMmQyLTE3NDk5NzAzMzc2ODYucG5n",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "I should see the \"All Items, About, Logout, Reset App State\" in \"Hamburger Menu SubOptions\".",
+            "match": {
+              "location": "src\\steps\\commonSteps.ts:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 215018200
+            },
+            "embeddings": [
+              {
+                "data": "U2NyZWVuc2hvdCB0YWtlbiA6IEQ6XFBsYXl3cmlnaHRGcmFtZXdvcmtcc2NyZWVuc2hvdHNcN2NjYmM0NDYtYzAxOC00ZmM4LTg3YWQtNjgwNjc3ZGJkMmQyLTE3NDk5NzAzMzc5MTIucG5n",
                 "mime_type": "text/plain"
               }
             ]
@@ -114,14 +115,14 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1352300
+              "duration": 637399
             }
           }
         ],
         "tags": [
           {
             "name": "@SauceDemo-UI-Test",
-            "line": 9
+            "line": 10
           }
         ],
         "type": "scenario"
@@ -133,5 +134,124 @@
     "name": "Sauce Demo : Verify HamburgerMenu Sub Options",
     "tags": [],
     "uri": "features\\SauceDemo_UI\\HamburgerMenu_SubOptions_Validation.feature"
+  },
+  {
+    "description": "    Test Case Number : TC_002\n    As a user i want to verify the display of App Logo and Products Title on the Landing Page",
+    "elements": [
+      {
+        "description": "",
+        "id": "sauce-demo-:-display-of-app-logo-and-products-title-on-the-landing-page;verify-the-display-of-app-logo-and-products-title-on-the-landing-page",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Verify the display of App Logo and Products Title on the Landing Page",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2500699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I reset the Error and Warning Messages",
+            "match": {
+              "location": "src\\steps\\commonSteps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 134904099
+            },
+            "embeddings": [
+              {
+                "data": "U2NyZWVuc2hvdCB0YWtlbiA6IEQ6XFBsYXl3cmlnaHRGcmFtZXdvcmtcc2NyZWVuc2hvdHNcOTk0NGQ4ZDctNjYzMy00NTYwLWFiNDctY2I3ZDg4OGUwNWQxLTE3NDk5NzAzMzgwNTYucG5n",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I reload the page",
+            "match": {
+              "location": "src\\steps\\commonSteps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 923052000
+            },
+            "embeddings": [
+              {
+                "data": "U2NyZWVuc2hvdCB0YWtlbiA6IEQ6XFBsYXl3cmlnaHRGcmFtZXdvcmtcc2NyZWVuc2hvdHNcOTk0NGQ4ZDctNjYzMy00NTYwLWFiNDctY2I3ZDg4OGUwNWQxLTE3NDk5NzAzMzg5NjgucG5n",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see the \"Swag Labs\" in \"App Logo\".",
+            "match": {
+              "location": "src\\steps\\commonSteps.ts:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 203420599
+            },
+            "embeddings": [
+              {
+                "data": "U2NyZWVuc2hvdCB0YWtlbiA6IEQ6XFBsYXl3cmlnaHRGcmFtZXdvcmtcc2NyZWVuc2hvdHNcOTk0NGQ4ZDctNjYzMy00NTYwLWFiNDctY2I3ZDg4OGUwNWQxLTE3NDk5NzAzMzkxNjUucG5n",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I should see the \"Products\" in \"Products Title\".",
+            "match": {
+              "location": "src\\steps\\commonSteps.ts:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 191199999
+            },
+            "embeddings": [
+              {
+                "data": "U2NyZWVuc2hvdCB0YWtlbiA6IEQ6XFBsYXl3cmlnaHRGcmFtZXdvcmtcc2NyZWVuc2hvdHNcOTk0NGQ4ZDctNjYzMy00NTYwLWFiNDctY2I3ZDg4OGUwNWQxLTE3NDk5NzAzMzkzNjUucG5n",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 403299
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SauceDemo-UI-Test",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "sauce-demo-:-display-of-app-logo-and-products-title-on-the-landing-page",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Sauce Demo : Display of App Logo and Products Title on the Landing Page",
+    "tags": [],
+    "uri": "features\\SauceDemo_UI\\Homepage_UI_Display.feature"
   }
 ]

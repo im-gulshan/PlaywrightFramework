@@ -39,9 +39,8 @@ Given("I reload the page", async () => {
     }
 });
 
-When("I click on the Hamburger Menu", async (dataTable) => {
-    let menu: string = "";
-    let action:string = "";
+When("I navigate to the {string}.", async (label: string ,dataTable) => {
+    var[menu, action]: string = ""
 
     const elements = dataTable.hashes();
 
@@ -51,9 +50,12 @@ When("I click on the Hamburger Menu", async (dataTable) => {
         action = Action;
 
         await commonMethods.writeToLogFile(`Menu: ${menu}`);
-        await commonMethods.writeToLogFile(`Menu: ${action}`);
+        await commonMethods.writeToLogFile(`Action: ${action}`);
         await commonPageMethods.navigateToPageOrMenu(menu, action);
 
     }
+});
 
+Then("I should see the {string} in {string}.", async (options, locator) => {
+    await commonPageMethods.verifyText(options, locator)
 });
